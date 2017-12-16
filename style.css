@@ -1,0 +1,23 @@
+html {
+	height:100%;
+}
+
+body {
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+#titleAndLinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.linkBox {
+	max-width: 32px;
+	max-height: 32px;
+}
+

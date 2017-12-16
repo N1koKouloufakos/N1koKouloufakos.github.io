@@ -1,0 +1,3 @@
+function openGithub() {
+	document.getElementById()
+}
