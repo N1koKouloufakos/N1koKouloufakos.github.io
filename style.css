@@ -1,23 +1,110 @@
-html {
-	height:100%;
+body, html {
+	margin: 0%;
+	height: 100%;
+	color: #e0e0e0;
 }
 
 body {
-	height:100%;
+ /* The image used */
+  background-image: url("Kinsale_Cathedral.jpg");
+
+  /* Set a specific height */
+  height: 200%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+	font-size: 40px;
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+div {
+	background-color: green: 
+}
+
+p {
+	line-height: 140%;
+}
+
+button {
+	background-color: #fff;
+}
+
+
+#header {
+	padding: 22px;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	background-color: rgba(50,50,50,0.5);
+}
+
+/*.parallax {
+    background-image: url("Kinsale_Cathedral.jpg")
+
+    height: 100%; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+.halfSizedParallax {
+	height: 50% !important;
 }
 
 #titleAndLinks {
+	vertical-align: center;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-content: center;
+	font-family: "Roboto Slab";
 }
 
-.linkBox {
-	max-width: 32px;
-	max-height: 32px;
+#links {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+
+#content {
+	margin-top:20%;
+	background-color: #555555;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	font-family: 'Encode Sans Expanded', sans-serif;;
+}
+
+.resume_title {
+	margin-top:20%;
+	background-color: #555555;
+	text-align: center;
+	font-family: 'Encode Sans Expanded', sans-serif;;
+}
+
+.resume_content {
+	background-color: #555555;
+	font-family: 'Encode Sans Expanded', sans-serif;;
+}
+
+#writeUp {
+	padding: 15px; 
+	flex: 1 1;
+	min-width: 595px;
+	max-width: 595px;
+}
+
+#video {
+	flex: 1 1;
 }
 
