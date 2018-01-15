@@ -1,21 +1,40 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="UTF-8">
 	<title>Hello World</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Slab|Encode+Sans+Expanded" rel="stylesheet">
 	<script type="text/javascript" src="scripts.js"></script>
 </head>
-
-
 <body>
+
+<div id="header">
 	<div id="titleAndLinks">
-		<H1>Nikolas Kouloufakos</H1>
-		<div class="linkBox" id="github">
-			<img src="github.png" onclick="openGithub()">
+		<H1> Nikolas Kouloufakos </H1>
+		<div id="links">
+				<a href="https://github.com/N1koKouloufakos" target="_blank"><img src="github.png"></a>
+				<a href="https://twitter.com/hqramen?lang=en" target="_blank"><img src="twitter.png"></a>
 		</div>
 	</div>
-</body>
+</div>
 
+<div id="content">
+	<div id="writeUp">
+		<p>Hello! <br />
+			I'm a young software developer and jazz musician. <br />
+			The background is a photo I took of the Cobh Cathedral. <br />
+			The links to my Github and Twitter were drawn by me.<br />
+			Hoping to learn more by creating everything from scratch, <br />
+			All sheets, html, and javascript were written by me (save for the font sheet).<br />
+			These videos are of myself and peers playing my arrangements of jazz standards. <br />
+			<button onclick="openResume()">View Resume</button>
+			<button onclick="changeVideo()">View Other Video</button>
+	</div>
+	<div id="video">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/E4Eoev6a6nQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen id="youtube"></iframe>
+	</div>
+</div>
+
+</body>
 </html>
