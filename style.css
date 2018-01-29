@@ -130,6 +130,7 @@ button:active {
 }
 
 #writeUp {
+	background-color: #555;
 	padding: 15px; 
 	flex: 1 1;
 	min-width: 595px;
@@ -150,7 +151,7 @@ button:active {
 	display: flex;
 	height: 100%;
 	flex: 1 1;
-	background-color: transparent;
+	background-color: #555;
 	align-items: center;
 	justify-content: center;
 }
