@@ -5,7 +5,8 @@
 	<title>Hello World</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Slab|Encode+Sans+Expanded" rel="stylesheet">
-	<script type="text/javascript" src="scripts.js"></script>
+  <script src="jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 
@@ -19,22 +20,92 @@
 	</div>
 </div>
 
-<div id="content">
-	<div id="writeUp">
-		<p>Hello! <br />
-			I'm a young software developer and jazz musician. <br />
-			The background is a photo I took of the Cobh Cathedral. <br />
-			The links to my Github and Twitter were drawn by me.<br />
-			Hoping to learn more by creating everything from scratch, <br />
-			All sheets, html, and javascript were written by me (save for the font sheet).<br />
-			These videos are of myself and peers playing my arrangements of jazz standards. <br />
-			<button onclick="openResume()">View Resume</button>
-			<button onclick="changeVideo()">View Other Video</button>
+<div id="contentWrapper">
+	<div class="content">
+		<div id="writeUp">
+			<p>Hello! <br />
+				I'm a young software developer and jazz musician. <br />
+				The background is a photo I took of the Cobh Cathedral. <br />
+				The links to my Github and Twitter were drawn by me.<br />
+				Hoping to learn more by creating everything from scratch, <br />
+				All sheets, html, and javascript were written by me (save for the font sheet).<br />
+				These videos are of myself and peers playing my arrangements of jazz standards. <br />
+				I have 3 projects that I built in Processing on display below.<br />
+				Scroll down to view my resume!</p>
+		</div>
+		<div id="video">
+			<div class="moveArrow">
+				<img id="leftArrow" src="rightArrow.png" height="50%" width="100%" onclick="moveVideoBackward()">
+			</div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/E4Eoev6a6nQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen id="youtube"></iframe>
+			<div class="moveArrow">
+				<img id="rightArrow" src="rightArrow.png" height="50%" width="100%" onclick="moveVideoForward()">
+			</div>
+		</div>
 	</div>
-	<div id="video">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/E4Eoev6a6nQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen id="youtube"></iframe>
+	<div id="slideshow">
+   <div>
+     <p> Brains! A zombie infection game built in Processing. </p>
+		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/6.18_Brains"><img src="zombieCode.png" height="350px" width="350px"></a>
+   </div>
+   <div>
+     <p> An original cartoon dog generator. </p>
+		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/3.10_Picture_Stamping"><img src="doggoCode.png" height="350px" width="350px"></a> 
+   </div>
+   <div>
+     <p> A 3D Processing sketch of Exam prep. </p>
+		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/4.13_Exam_Stress"><img src="examStress.png" height="350px" width="350px"></a> 
+   </div>
 	</div>
 </div>
 
+<div class="resumeContainer">
+			<h1 style="text-align: center"> Work Experience </h1>
+		<div class="resume_content">
+			<ul>
+				<li style="font-size:24px"> Shopify (2016, 2017-Present) </li>
+				<ul>
+					<li>Learned about database maintenance tasks using Ruby. </li>
+					<li> Developed and implemented user behaviour tracking script with CoffeeScript</li>
+				</ul>
+				<li style="font-size:24px"> Goulbourn Recreation Complex (2015-2017) </li>
+				<ul>
+					<li>formal training in Cash Handling, CORE Training, Team Excellence in Service Delivery, and Service Excellence in a Collaborative Environment </li>
+					<li> Interact with all technologies behind the desk (CLASS 8.0, card and receipt printers, and Moneris terminals)</li>
+				</ul>
+				<li style="font-size:24px"> Kanata Pharamasave (2015-2017) </li>
+				<ul>
+					<li>Training in AODA Customer Service, Customer Service Excellence, Occupational Health and Safety Awareness for Workers in Ontario, PIPEDA, WHMIS 2015 including the GHS, Workplace Violence and Harassment</li>
+				</ul>
+			</ul>
+		</div>
+		</div>
+		<div class="resumeContainer" id="achievementContainer">
+			<h1 style="text-align: center"> Achievements </h1>
+		<div class="resume_content">
+			<ul>
+				<li style="font-size:24px"> Piano </li>
+				<ul>
+					<li> Canadian Conservatory Medal of Excellence Grade 3 Practical (90%) </li>
+					<li> Canadian Conservatory Medal of Excellence Grade 4 Theory (97%) </li>
+					<li> Canadian Conservatory Medal of Excellence Grade 7 Practical (96.5%) </li>
+					<li> Performed for Ottawa Arts Council 2017 Awards Gala </li>
+					<li> Performed at NAC Fourth Stage and Chateau Laurier</li>
+					<li> Keyboardist for Canterbury Senior Jazz Band (2017)</li>
+				</ul>
+				<li style="font-size:24px"> Saxophone </li>
+				<ul>
+					<li> Section Leader of Canterbury Intermediate Concert Band (2015) </li>
+					<li> Section Leader of Canterbury Senior Concert Band (2017) </li>
+					<li> Tenor for Canterbury Senior Jazz Band (2016) </li>
+				</ul>
+				<li style="font-size:24px"> Academic </li>
+				<ul>
+					<li> Top 25% in Canada for Waterloo Cayley, Fermat and Euclid Math Contest </li>
+					<li> 96% Grade 12 Graduating Average (Music, Advanced Functions, Calculus, Chemistry, Physics, Computer Science) </li>
+				</ul>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
