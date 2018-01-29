@@ -33,17 +33,44 @@ p {
 }
 
 button {
-	background-image: linear-gradient(-45deg, white, grey);
+	background-color: 120;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
 
+button:active {
+	background-color: 240;
+}
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 400px; 
+    height: 400px; 
+    padding: 0px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    position: absolute; 
+    justify-content: center;
+    text-align: center;
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+    overflow: hidden;
+}
 
 #header {
 	padding: 22px;
 	display: flex;
 	justify-content: center;
 	background-color: rgba(50,50,50,0.5);
+	margin-bottom: 10%;
 }
 
+#contentWrapper {
+	background-color: #555555;
+}
 /*.parallax {
     background-image: url("Kinsale_Cathedral.jpg")
 
@@ -75,8 +102,7 @@ button {
 	justify-content: space-around;
 }
 
-#content {
-	margin-top:20%;
+.content {
 	background-color: #555555;
 	display: flex;
 	justify-content: center;
@@ -85,14 +111,20 @@ button {
 	font-family: 'Encode Sans Expanded', sans-serif;;
 }
 
-.resume_title {
+.resumeContainer {
 	margin-top:20%;
 	background-color: #555555;
-	text-align: center;
-	font-family: 'Encode Sans Expanded', sans-serif;;
+	font-family: 'Encode Sans Expanded', sans-serif;
+}
+
+#achievementContainer {
+	margin-top:0px;
 }
 
 .resume_content {
+	text-align: ;
+	margin:0px;
+	padding-top:0px;
 	background-color: #555555;
 	font-family: 'Encode Sans Expanded', sans-serif;;
 }
@@ -105,10 +137,30 @@ button {
 }
 
 #video {
-	flex: 1 1;
+	display: flex;
+	flex: 2 1;
+	flex-direction: row;
 	padding: 15px; 
 	display: flex;
 	justify-content: center;
 	align-content: center;
+}
+
+.moveArrow {
+	display: flex;
+	height: 100%;
+	flex: 1 1;
+	background-color: transparent;
+	align-items: center;
+	justify-content: center;
+}
+
+#rightArrow {
+	cursor: pointer;
+}
+
+#leftArrow {
+	transform: scale(-1,-1);
+	cursor: pointer;
 }
 
