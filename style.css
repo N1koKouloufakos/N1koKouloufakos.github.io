@@ -19,7 +19,7 @@ body {
 }
 
 div{
-	display: none;
+	display: inline;
 }
 
 h1 {
