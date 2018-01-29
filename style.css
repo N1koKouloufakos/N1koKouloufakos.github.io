@@ -18,6 +18,10 @@ body {
   background-size: cover;
 }
 
+div{
+	display: none;
+}
+
 h1 {
 	font-size: 40px;
 	margin-top: 0px;
