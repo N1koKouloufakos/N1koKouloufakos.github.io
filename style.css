@@ -58,6 +58,7 @@ button:active {
     right: 10px; 
     bottom: 10px; 
     overflow: hidden;
+    background-color: transparent;
 }
 
 #header {
