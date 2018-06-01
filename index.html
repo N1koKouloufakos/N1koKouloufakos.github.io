@@ -1,111 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>Hello World</title>
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Slab|Encode+Sans+Expanded" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts.js"></script>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Get High</title>
+    <link rel='stylesheet' href="styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <h1>FUN</h1>
+      <button id='saveButton' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Save</button>
+      <button id='newButton' class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">New Game</button>
+    </header>
 
-<div id="header">
-	<div id="titleAndLinks">
-		<H1> Nikolas Kouloufakos </H1>
-		<div id="links">
-				<a href="https://github.com/N1koKouloufakos" target="_blank"><img src="github.png"></a>
-				<a href="https://twitter.com/hqramen?lang=en" target="_blank"><img src="twitter.png"></a>
-		</div>
-	</div>
-</div>
+    <div id='content'>
+      <div id='resourceContainer'>
+        <button id="waterPlants" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" width="300" height="300">Water Plants</button>
+        <div id="weed">
+          0 weed
+        </div>
+      </div>
 
-<div id="contentWrapper">
-	<div class="content">
-		<div id="writeUp">
-			<p>Hello! <br />
-				I'm a young software developer and jazz musician. <br />
-				The background is a photo I took of the Cobh Cathedral. <br />
-				The links to my Github and Twitter were drawn by me.<br />
-				Hoping to learn more by creating everything from scratch, <br />
-				All sheets, html, and javascript were written by me (save for the font sheet).<br />
-				These videos are of myself and peers playing my arrangements of jazz standards. <br />
-				I have 3 projects that I built in Processing on display below.<br />
-				Scroll down to view my resume!</p>
-		</div>
-		<div id="video">
-			<div class="moveArrow">
-				<img id="leftArrow" src="rightArrow.png" height="50%" width="100%" onclick="moveVideoBackward()">
-			</div>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/E4Eoev6a6nQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen id="youtube"></iframe>
-			<div class="moveArrow">
-				<img id="rightArrow" src="rightArrow.png" height="50%" width="100%" onclick="moveVideoForward()">
-			</div>
-		</div>
-	</div>
-	<div id="slideshow">
-   <div>
-     <p style="margin:0px"> Brains! A zombie infection game built in Processing. </p>
-		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/6.18_Brains"><img src="zombieCode.png" height="350px" width="350px"></a>
-   </div>
-   <div>
-     <p style="margin:0px"> An original cartoon dog generator. </p>
-		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/3.10_Picture_Stamping"><img src="doggoCode.png" height="350px" width="350px"></a> 
-   </div>
-   <div>
-     <p style="margin:0px"> A 3D Processing sketch of Exam prep. </p>
-		<a href="https://github.com/N1koKouloufakos/CS1_Exercises/tree/master/4.13_Exam_Stress"><img src="examStress.png" height="350px" width="350px"></a> 
-   </div>
-	</div>
-</div>
+      <div id='upgradeContainer'>  
+      </div>
+    </div>
 
-<div class="resumeContainer">
-			<h1 style="text-align: center"> Work Experience </h1>
-		<div class="resume_content">
-			<ul>
-				<li style="font-size:24px"> Shopify (2016, 2017-Present) </li>
-				<ul>
-					<li>Learned about database maintenance tasks using Ruby. </li>
-					<li> Developed and implemented user behaviour tracking script with CoffeeScript</li>
-				</ul>
-				<li style="font-size:24px"> Goulbourn Recreation Complex (2015-2017) </li>
-				<ul>
-					<li>formal training in Cash Handling, CORE Training, Team Excellence in Service Delivery, and Service Excellence in a Collaborative Environment </li>
-					<li> Interact with all technologies behind the desk (CLASS 8.0, card and receipt printers, and Moneris terminals)</li>
-				</ul>
-				<li style="font-size:24px"> Kanata Pharamasave (2015-2017) </li>
-				<ul>
-					<li>Training in AODA Customer Service, Customer Service Excellence, Occupational Health and Safety Awareness for Workers in Ontario, PIPEDA, WHMIS 2015 including the GHS, Workplace Violence and Harassment</li>
-				</ul>
-			</ul>
-		</div>
-		</div>
-		<div class="resumeContainer" id="achievementContainer">
-			<h1 style="text-align: center"> Achievements </h1>
-		<div class="resume_content">
-			<ul>
-				<li style="font-size:24px"> Piano </li>
-				<ul>
-					<li> Canadian Conservatory Medal of Excellence Grade 3 Practical (90%) </li>
-					<li> Canadian Conservatory Medal of Excellence Grade 4 Theory (97%) </li>
-					<li> Canadian Conservatory Medal of Excellence Grade 7 Practical (96.5%) </li>
-					<li> Performed for Ottawa Arts Council 2017 Awards Gala </li>
-					<li> Performed at NAC Fourth Stage and Chateau Laurier</li>
-					<li> Keyboardist for Canterbury Senior Jazz Band (2017)</li>
-				</ul>
-				<li style="font-size:24px"> Saxophone </li>
-				<ul>
-					<li> Section Leader of Canterbury Intermediate Concert Band (2015) </li>
-					<li> Section Leader of Canterbury Senior Concert Band (2017) </li>
-					<li> Tenor for Canterbury Senior Jazz Band (2016) </li>
-				</ul>
-				<li style="font-size:24px"> Academic </li>
-				<ul>
-					<li> Top 25% in Canada for Waterloo Cayley, Fermat and Euclid Math Contest </li>
-					<li> 96% Grade 12 Graduating Average (Music, Advanced Functions, Calculus, Chemistry, Physics, Computer Science) </li>
-				</ul>
-			</ul>
-		</div>
-	</div>
-</body>
+    <footer id='finalUpgradesContainer'>
+      <button id="buyPuppet" name="100,000 bucks pal" width="300" height="300">Buy Government Puppet to Legalize</button>
+      <button id="boughtGoogle" name="50,000 for Sundar" width="300" height="300">Get Bought By Google</button>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+  </body>
 </html>
